@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bloc de notas online &#x2014; un bloc de notas r&#xE1;pido y gratuito para tomar notas online y compartirlas. Guarda autom&#xE1;ticamente mientras escribes, sin necesidad de registro. Escribe en texto plano o enriquecido y descarga en PDF o Word." />
+    <title>Bloc de notas en l&#xED;nea - Toma y comparte notas en l&#xED;nea</title>
+    <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({ page_location_clean: location.origin + location.pathname });</script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-NQC99C3');</script>
+    <link rel="icon" type="image/png" href="https://cdn.anotepad.com/favicon-32x32.png?v=2611161837" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://cdn.anotepad.com/favicon-16x16.png?v=2611161837" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.anotepad.com/css/site.min.css?v=2611161837" />
+        <script data-cfasync="false">window.ramp = window.ramp || {}; window.ramp.que = window.ramp.que || []; window.pwEdgeYieldOptions = { iubendaCmpEnabled: false };</script>
+        <script src="https://cdn.anotepad.com/js/ads.js?v=2611161837" data-cfasync="false"></script>
+            <script data-cfasync="false">
+                window.googletag = window.googletag || {}; window.googletag.cmd = window.googletag.cmd || [];
+                window.googletag.cmd.push(function () {
+                    var pubads = window.googletag.pubads && window.googletag.pubads();
+                    if (!pubads || !pubads.addEventListener) return;
+                    var pushAdEvent = function (event, slot) {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({ event: event, slot: slot && slot.getSlotElementId ? slot.getSlotElementId() : '', cohort: (window.Notepad && window.Notepad.LinkCheckCohort) || '' });
+                    };
+                    pubads.addEventListener('impressionViewable', function (e) { pushAdEvent('ad_impression', e.slot); });
+                    pubads.addEventListener('slotRenderEnded', function (e) { if (!e.isEmpty) pushAdEvent('ad_render', e.slot); });
+                });
+            </script>
+        <script data-cfasync="false">
+            window.fnLoadRamp = function () {
+                if (window.__rampRequested) return;
+                window.__rampRequested = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.setAttribute('data-cfasync', 'false');
+                s.src = 'https://cdn.intergient.com/1025332/75100/ramp.js';
+                document.head.appendChild(s);
+            };
+            window.fnDeferRampLoad = function () {
+                var isPhone = Math.min(window.screen.width, window.screen.height) < 768;
+                if (!isPhone) {
+                    window.fnLoadRamp();
+                    return;
+                }
+                var whenIdle = function () {
+                    if ('requestIdleCallback' in window) requestIdleCallback(window.fnLoadRamp, { timeout: 2000 });
+                    else setTimeout(window.fnLoadRamp, 200);
+                };
+                if (document.readyState === 'complete') whenIdle();
+                else window.addEventListener('load', whenIdle);
+                setTimeout(window.fnLoadRamp, 4000); 
+            };
+        </script>
+    <script>var Notepad = Notepad || {}; Notepad.Theme = 'light'; Notepad.LanguageCode = 'es'; Notepad.CdnUrl = 'https://cdn.anotepad.com'; Notepad.RootDomain = 'anotepad.com'; Notepad.AdsEnabled = true; Notepad.LinkCheckCohort = 'none'; window.dataLayer = window.dataLayer || []; window.dataLayer.push({ link_check_cohort: 'none' });</script>
+    <link rel="canonical" href="https://es.anotepad.com/" />
+            <link rel="alternate" hreflang="en" href="https://anotepad.com/" />
+            <link rel="alternate" hreflang="zh-Hans" href="https://cn.anotepad.com/" />
+            <link rel="alternate" hreflang="de" href="https://de.anotepad.com/" />
+            <link rel="alternate" hreflang="es" href="https://es.anotepad.com/" />
+            <link rel="alternate" hreflang="fr" href="https://fr.anotepad.com/" />
+            <link rel="alternate" hreflang="id" href="https://id.anotepad.com/" />
+            <link rel="alternate" hreflang="it" href="https://it.anotepad.com/" />
+            <link rel="alternate" hreflang="ja" href="https://jp.anotepad.com/" />
+            <link rel="alternate" hreflang="ko" href="https://ko.anotepad.com/" />
+            <link rel="alternate" hreflang="pt" href="https://pt.anotepad.com/" />
+            <link rel="alternate" hreflang="ru" href="https://ru.anotepad.com/" />
+            <link rel="alternate" hreflang="th" href="https://th.anotepad.com/" />
+            <link rel="alternate" hreflang="tr" href="https://tr.anotepad.com/" />
+            <link rel="alternate" hreflang="zh-Hant" href="https://tw.anotepad.com/" />
+            <link rel="alternate" hreflang="vi" href="https://vi.anotepad.com/" />
+            <link rel="alternate" hreflang="ar" href="https://ar.anotepad.com/" />
+            <link rel="alternate" hreflang="cs" href="https://cs.anotepad.com/" />
+            <link rel="alternate" hreflang="da" href="https://da.anotepad.com/" />
+            <link rel="alternate" hreflang="nl" href="https://nl.anotepad.com/" />
+            <link rel="alternate" hreflang="fi" href="https://fi.anotepad.com/" />
+            <link rel="alternate" hreflang="el" href="https://el.anotepad.com/" />
+            <link rel="alternate" hreflang="he" href="https://he.anotepad.com/" />
+            <link rel="alternate" hreflang="hi" href="https://hi.anotepad.com/" />
+            <link rel="alternate" hreflang="ms" href="https://ms.anotepad.com/" />
+            <link rel="alternate" hreflang="no" href="https://no.anotepad.com/" />
+            <link rel="alternate" hreflang="pl" href="https://pl.anotepad.com/" />
+            <link rel="alternate" hreflang="sv" href="https://sv.anotepad.com/" />
+            <link rel="alternate" hreflang="uk" href="https://ua.anotepad.com/" />
+        <link rel="alternate" hreflang="x-default" href="https://anotepad.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Bloc de notas en l&#xED;nea - Toma y comparte notas en l&#xED;nea" />
+        <meta property="og:description" content="Bloc de notas online &#x2014; un bloc de notas r&#xE1;pido y gratuito para tomar notas online y compartirlas. Guarda autom&#xE1;ticamente mientras escribes, sin necesidad de registro. Escribe en texto plano o enriquecido y descarga en PDF o Word." />
+        <meta property="og:url" content="https://es.anotepad.com/" />
+        <meta property="og:site_name" content="aNotepad" />
+        <meta property="og:image" content="https://cdn.anotepad.com/images/anotepad-og.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Bloc de notas en l&#xED;nea - Toma y comparte notas en l&#xED;nea" />
+        <meta name="twitter:description" content="Bloc de notas online &#x2014; un bloc de notas r&#xE1;pido y gratuito para tomar notas online y compartirlas. Guarda autom&#xE1;ticamente mientras escribes, sin necesidad de registro. Escribe en texto plano o enriquecido y descarga en PDF o Word." />
+        <meta name="twitter:image" content="https://cdn.anotepad.com/images/anotepad-og.png" />
+    
+
+</head>
+
+<body class="theme-light">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQC99C3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-inverse fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/" title="Bloc de notas en l&#xED;nea">
+                <img id="logo_img" src="https://cdn.anotepad.com/images/anotepad.svg?v=2611161837" alt="aNotepad" /> aNotepad
+            </a>
+            <span class="sub-title d-none d-lg-inline-block"> - bloc de notas online gratis</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegaci&#xF3;n">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+                    <li class="">
+                        <a class="nav-link" href="/templates"><span><i class="bi bi-collection me-2"></i>Plantillas</span></a>
+                    </li>
+                    <li class="">
+                        <a class="nav-link" href="https://anotepad.cc?lang=es"><span><i class="bi bi-people me-2"></i>Espacio de trabajo</span></a>
+                    </li>
+                        <li class="">
+                            <a class="nav-link" href="/create_account"><span><i class="bi bi-box-arrow-in-right me-2"></i>Registrarse/Iniciar sesi&#xF3;n</span></a>
+                        </li>
+                        <li><a href="javascript:fnLanguage();" class="nav-link"><i class="bi bi-globe"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container main-container">
+
+
+<p id="msgDanger" class="alert alert-danger" style="display: none;"></p>
+<p id="msgWarning" class="alert alert-warning" style="display: none;"></p>
+<p id="msgInfo" class="alert alert-info" style="display: none;"></p>
+<p id="msgSuccess" class="alert alert-success" style="display: none;"></p>
+
+
+    <div class="home-hero">
+        <h1 class="home-hero-title">Bloc de notas online</h1>
+        <p class="home-hero-tagline">Un bloc de notas online gratuito para tomar y compartir notas &#x2014; directamente en tu navegador.</p>
+    </div>
+<div id="edit_content">
+    
+    <form method="post" name="note_form" id="note_form" role="form" class="container g-2" action="//localhost/" onsubmit="return false;">
+        <div class="mb-3 row">
+            <div class="col-sm-12">
+                <input type="text" name="notetitle" id="edit_title" class="form-control title" placeholder="T&#xED;tulo de la nota" tabindex="1" maxlength="200" autocomplete="off" />
+                <input type="hidden" name="notetype" id="notetype" value="PlainText" />
+                <input type="hidden" name="notenumber" id="notenumber" />
+                <input type="hidden" name="autosavenotenumber" id="autosavenotenumber" />
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="col-sm-12">
+                <span class="topLinks dropdown">
+                    <a id="notetypeLabel" href="#" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-clipboard2-plus me-1"></i><strong class="dropdown-toggle" id="noteTypeDropdown">Nueva nota</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notetypeLabel">
+                        <li>
+                            <a class="dropdown-item" href="/" onclick="fnNewPlainText(); return false;">
+                                <i class="bi bi-filetype-txt me-2"></i>Nota en texto plano
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Javascript:fnNewRichText();">
+                                <i class="bi bi-text-paragraph me-2"></i>Nota en texto enriquecido
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/markdown" onclick="fnNewMarkdown(); return false;">
+                                <i class="bi bi-markdown me-2"></i>Markdown
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/tasklist" onclick="fnNewTaskList(); return false;">
+                                <i class="bi bi-check-square me-2"></i>Lista de tareas
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/bookmark">
+                                <i class="bi bi-bookmark-star me-2"></i>Favorito
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/whiteboard" onclick="fnNewWhiteboard(); return false;">
+                                <i class="bi bi-easel me-2"></i>Pizarra blanca
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/spreadsheet" onclick="fnNewSpreadsheet(); return false;">
+                                <i class="bi bi-table me-2"></i>Hoja de c&#xE1;lculo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/groupchat" onclick="fnNewGroupChat(); return false;">
+                                <i class="bi bi-chat-dots me-2"></i>Chat grupal
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+                    <span class="topLinks"><strong><a href="Javascript:fnImportFile();"><i class="bi bi-file-earmark-arrow-up me-1"></i>Importar Docs</a></strong></span>
+                <span class="topLinks"><a class="a2a_dd" rel="nofollow"><strong><i class="bi bi-share me-1"></i>Compartir</strong></a></span>
+                    <span class="topLinks"><strong><a href="Javascript:fnAiChatToggle();"><i class="bi bi-robot me-1"></i>Chat de IA</a></strong></span>
+            </div>
+        </div>
+        
+            <div class="mb-3 row" id="textNoteContainer">
+                <div class="col-sm-12 editor-wrap">
+                    <textarea name="notecontent" class="form-control textarea " id="edit_textarea" placeholder="Contenido de la nota" tabindex="2" rows="19"></textarea>
+                        <button type="button" class="editor-maximize-btn" onclick="fnToggleEditor()" title="Maximizar Editor"><i class="bi bi-arrows-fullscreen"></i></button>
+                </div>
+            </div>
+
+        
+
+        
+        
+
+
+
+
+        <div class="mb-3 row">
+            <div class="col-md-12" style="margin-bottom: 20px;">
+                <input type="button" class="btn btn-primary" value="Guardar" id="btnSaveNote" onclick="fnSaveNote();" tabindex="3" />  &nbsp;
+                        <label><i class="bi bi-unlock me-1"></i>Nota pública (<a href="/create_account" class="register" tabindex="4">Regístrate</a> para crear notas privadas)</label>
+                <span id="actionMessage" style="display: none;" class="alert-success"></span>
+            </div>
+
+
+                <div class="col-md-12">
+                        <!--  [Desktop/Tablet/Mobile] Standard IAB - Center Column 1 -->
+                        <div data-pw-mobi="standard_iab_cntr1" data-pw-desk="standard_iab_cntr1" id="standard_iab_cntr1"></div>
+                        <script type="text/javascript">
+                            window.ramp.que.push(function () {
+                                window.ramp.addTag("standard_iab_cntr1");
+                            })
+                        </script>
+                        <script data-cfasync="false">window.fnDeferRampLoad();</script>
+                    
+                </div>
+        </div>
+    </form>
+
+</div>
+
+<div id="aiChatPanel" class="ai-chat-panel" data-guest="true" >
+    <div class="ai-chat-header">
+        <h6><i class="bi bi-robot me-2"></i>Chat de IA</h6>
+        <div class="ai-chat-header-actions">
+            <button type="button" onclick="fnAiChatClear();" title="Borrar chat"><i class="bi bi-trash3"></i></button>
+            <button type="button" onclick="fnAiChatToggle();" title="Cerrar"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+    <div id="aiChatMessages" class="ai-chat-messages">
+        <div class="ai-chat-empty">Hazle una pregunta al asistente de IA para comenzar.</div>
+    </div>
+    <div class="ai-chat-input">
+            <label class="ai-chat-context">
+                <input type="checkbox" onchange="fnAiChatToggleContext(this);" />
+                Chatear sobre esta nota
+            </label>
+        <div class="ai-chat-input-row">
+            <textarea id="aiChatInput" rows="1" placeholder="Preg&#xFA;ntame lo que quieras..."></textarea>
+            <button type="button" id="aiChatSendBtn" onclick="fnAiChatSend();">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="manageNoteAccessModal" tabindex="-1" role="dialog" aria-labelledby="noteAccessLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noteAccessModalLabel"><i class="bi bi-shield-check me-2"></i>Permiso para leer la nota</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-check mb-2">
+                    <input class="form-check-input-modal" type="radio" name="access" id="accesspublic" value="2" checked=checked onclick="fnNoteAccessRadioChanged('Public');">
+                    <label class="form-check-label ps-1" for="accesspublic"><i class="bi bi-unlock me-1"></i>Nota p&#xFA;blica</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input-modal" type="radio" name="access" id="accessprivate" value="1"  onclick="fnNoteAccessRadioChanged('Private');">
+                    <label class="form-check-label ps-1" for="accessprivate"><i class="bi bi-lock me-1"></i>Nota privada</label>
+                </div>
+                <div class="form-check mb-2 d-flex align-items-center">
+                    <input class="form-check-input-modal" type="radio" name="access" id="accesspasswordprotected" value="3"  onclick="fnNoteAccessRadioChanged('Password');">
+                    <label class="form-check-label ps-1 me-2" for="accesspasswordprotected"><i class="bi bi-shield-lock me-1"></i>Nota protegida por contrase&#xF1;a</label>
+                    <input type="text" name="password" id="password" class="form-control form-control-sm" style="max-width: 150px;" placeholder="Contrase&#xF1;a" />
+                </div>
+                <hr class="my-3" />
+                <h5 class="mb-3"><i class="bi bi-pencil-square me-2"></i>Permiso para editar la nota</h5>
+                <div class="form-check mb-2">
+                    <input class="form-check-input-modal" type="checkbox" name="quickedit" id="quickedit" value="true" >
+                    <label class="form-check-label ps-1" for="quickedit">Permitir que otras personas con la contrase&#xF1;a del editor editen esta nota</label>
+                    <input type="text" name="quickeditpassword" id="quickeditpassword" class="form-control form-control-sm mt-2 ms-4" style="max-width: 250px;" placeholder="Contrase&#xF1;a del editor" />
+                </div>
+
+                <div id="noteAccessMessage" class="mt-3 d-none"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="fnSaveNoteAccess()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="noteVersionsModal" tabindex="-1" role="dialog" aria-labelledby="noteVersionsModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Historial de versiones de la nota</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="noteVersionsContent">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="emailNoteModal" tabindex="-1" role="dialog" aria-labelledby="emailNoteModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="emailNoteModalLabel">Enviar nota por correo electr&#xF3;nico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="emailNoteContent">
+                <div class="alert alert-warning">Esta función está disponible solo en el plan Premium. <a href="/settings/membership?from=email-note">Mejorar ahora</a> para acceder a más funciones increíbles.</div>
+                <form role="form">
+                    <div class="mb-3 row">
+                        <label class="col-sm-3 col-form-label">Enviar al correo electr&#xF3;nico</label>
+                        <div class="col-sm-6">
+                            <input type="email" name="emailNoteEmail" id="emailNoteEmail" placeholder="Direcci&#xF3;n de correo electr&#xF3;nico" class="form-control" maxlength="50" value=""/>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label class="col-sm-3 col-form-label">Formato de la nota</label>
+                        <div class="col-sm-6">
+                            <div class="form-check">
+                                <input class="form-check-input-modal" name="emailNoteType" id="emailNoteTypeHtml" type="radio" value="html" checked="checked"/>
+                                <label class="form-check-label" for="emailNoteTypeHtml">Cuerpo del correo electr&#xF3;nico</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input-modal" name="emailNoteType" id="emailNoteTypePdf" type="radio" value="pdf" />
+                                <label class="form-check-label" for="emailNoteTypePdf">Adjunto PDF</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input-modal" name="emailNoteType" id="emailNoteTypeDocx" type="radio" value="docx" />
+                                <label class="form-check-label" for="emailNoteTypeDocx">Adjunto Word</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="offset-sm-3 col-sm-6">
+                            <div id="emailNoteError" class="alert alert-danger" style="padding: 5px; display: none">Direcci&#xF3;n de correo electr&#xF3;nico no v&#xE1;lida</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="guestDownloadModal" tabindex="-1" role="dialog" aria-labelledby="guestDownloadModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="guestDownloadModalLabel">Guarda tu trabajo con una cuenta gratuita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Crea una cuenta gratis para desbloquear m&#xE1;s funciones:</p>
+                <ul class="mb-0">
+                    <li>Accede a tus notas desde cualquier dispositivo</li>
+                    <li>Asistencia de escritura y chat con IA</li>
+                    <li>Nunca pierdas tus notas</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" onclick="fnGuestDownloadContinue()">Continuar sin cuenta</button>
+                <a href="/create_account?returnUrl=%2F" class="btn btn-primary">Reg&#xED;strate o inicia sesi&#xF3;n</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        window._pendingDownloadUrl = null;
+        window.fnGuestDownloadCheck = function (event, linkEl) {
+            event.preventDefault();
+            window._pendingDownloadUrl = linkEl.href;
+            var modal = new bootstrap.Modal(document.getElementById('guestDownloadModal'));
+            modal.show();
+            return false;
+        };
+        window.fnGuestDownloadContinue = function () {
+            var modalEl = document.getElementById('guestDownloadModal');
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            if (modal) modal.hide();
+            if (window._pendingDownloadUrl) {
+                window.open(window._pendingDownloadUrl, '_blank');
+                window._pendingDownloadUrl = null;
+            }
+        };
+    })();
+</script>
+
+<div class="modal" id="premiumPlanModal" tabindex="-1" role="dialog" aria-labelledby="premiumPlanModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="premiumPlanModalLabel">Actualizar a Premium</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="premiumPlanContent">
+                <form method="POST" action="/premium-upgrade" id="formUpgradeToPremium">
+                    <div class="premium-features">
+                        <div><b>aNotepad Premium</b> habilita las siguientes funciones adicionales:</div>
+ <ul>
+ <li><b>Sin anuncios</b></li>
+ <li><b>Redacción con IA y Chat IA</b></li>
+ <li><b>Adjuntar archivos y subir imágenes</b></li>
+ <li><b>Notas de audio</b></li>
+ <li><b>Notas de hasta 10MB y 50 versiones guardadas</b></li>
+ <li><b>Enviar notas por correo electrónico</b></li>
+ <li><b>200 notas/día y 10GB de almacenamiento</b></li>
+ <li>Desde <span class="price">$1.99</span>/mes, cancela cuando quieras</li>
+ </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btnUpgradeNow" type="button" class="btn btn-primary" onclick="fnUpgradeNow()">Actualizar ahora</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="importFileModal" tabindex="-1" role="dialog" aria-labelledby="importFileModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="importFileModalLabel">Importar nota desde archivo Word/PDF</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="importFileContent">
+                <input type="file" name="importFiles" data-fileuploader-limit="1" data-fileuploader-maxSize="1" data-fileuploader-fileMaxSize="1" data-fileuploader-extensions="doc,docx,rtf,odt,html,htm,txt,pdf" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="attachFileModal" tabindex="-1" role="dialog" aria-labelledby="attachFileModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="attachFileModalLabel">Adjuntar archivos a la nota</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="attachFileContent">
+                    <div class="alert alert-warning">Esta función está disponible solo en el plan Premium. <a href="/settings/membership?from=attach-file">Mejorar ahora</a> para acceder a más funciones increíbles.</div>
+                    <input type="file" name="attachFiles" data-fileuploader-limit="0" data-fileuploader-maxSize="100" data-fileuploader-fileMaxSize="25" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="displayNotes clearfix">
+        <div>
+            <form action="/search" role="form" method="post">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar" name="keyword" value="" id="search">
+                            <button class="btn btn-primary" type="submit" id="search" formaction="/search">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="notes">
+            <div style="font-size: 16px;font-weight: bold">Mis notas guardadas</div>
+            <div class="my_notes">
+                <div class="topLinks">
+                    <strong>
+                        <a href="javascript:fnSortByTitle();" role="button" title="Ordenar alfab&#xE9;ticamente"><i class="bi bi-sort-alpha-down me-1"></i>Ordenar por t&#xED;tulo</a>
+                        <a href="javascript:fnSortByUpdated();" role="button" title="M&#xE1;s recientes primero"><i class="bi bi-sort-down me-1"></i>Ordenar por actualizaci&#xF3;n</a>
+                    </strong>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <ul class="folder-list" id="folderList">
+                            
+<li id="folder_ALL" class="folder-item "><a href=" javascript:fnOpenFolder('ALL');" draggable="false">Todas las notas</a></li>
+<li id="folder_DEFAULT" class="folder-item droppable " title="Default Collection"><a href="javascript:fnOpenFolder('DEFAULT');" draggable="false">Bandeja de entrada</a></li>
+
+                        </ul>
+                        <ul class="folder-option" id="folderOption">
+                            <li><a href="Javascript:fnManageFolders();">Gestionar colecciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <ul class="saved-notes" id="savedNotes"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<div class="modal" id="manageFolderModal" tabindex="-1" role="dialog" aria-labelledby="manageFolderModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Gestionar colecciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="manageFolderContent">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="shareFolderModal" tabindex="-1" role="dialog" aria-labelledby="shareFolderModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Compartir y vender</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="shareFolderContent">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="fnSaveFolderAccess()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="home-content" aria-labelledby="home-content-heading">
+    <h2 id="home-content-heading" class="home-content-title">Todo lo que puedes hacer con aNotepad</h2>
+
+    <div class="home-feature-grid">
+            <article class="home-feature-card">
+                <div class="home-feature-icon"><i class="bi bi-share"></i></div>
+                <h3>Guarda y comparte tus notas</h3>
+                <p>Cada nota tiene su propio enlace que puedes compartir con quien quieras. Elige si una nota es privada, p&#xFA;blica o protegida con contrase&#xF1;a, y permite que otros la vean o colaboren. Las notas que compartes se mantienen sincronizadas entre la web y las apps m&#xF3;viles.</p>
+            </article>
+            <article class="home-feature-card">
+                <div class="home-feature-icon"><i class="bi bi-cloud-check"></i></div>
+                <h3>Guardado autom&#xE1;tico &#x2014; nunca pierdas una nota</h3>
+                <p>aNotepad guarda tu trabajo mientras escribes, as&#xED; no tienes que preocuparte por guardar. Tus notas te esperan en tu lista cada vez que regreses.</p>
+            </article>
+            <article class="home-feature-card">
+                <div class="home-feature-icon"><i class="bi bi-lightning-charge"></i></div>
+                <h3>No requiere registro</h3>
+                <p>Empieza a escribir al instante &#x2014; sin cuenta, sin correo, sin instalar nada. Cuando quieras carpetas, historial de compartidos y sincronizaci&#xF3;n entre dispositivos, crear una cuenta gratuita solo toma unos segundos.</p>
+            </article>
+            <article class="home-feature-card">
+                <div class="home-feature-icon"><i class="bi bi-shield-lock"></i></div>
+                <h3>Privado y seguro</h3>
+                <p>T&#xFA; decides qui&#xE9;n puede ver cada nota. Sin cuenta, las notas son p&#xFA;blicas para que puedas compartirlas con su enlace; con una cuenta gratuita, las nuevas notas son privadas por defecto. En cualquier caso, puedes cambiar cualquier nota entre privada, p&#xFA;blica o protegida con contrase&#xF1;a &#x2014; y borrarla cuando quieras. Nunca tienes que compartir informaci&#xF3;n personal para empezar.</p>
+            </article>
+            <article class="home-feature-card">
+                <div class="home-feature-icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
+                <h3>Descarga en PDF o Word</h3>
+                <p>&#xBF;Necesitas tu nota fuera del navegador? Exporta cualquier nota como PDF o documento de Microsoft Word con un solo clic &#x2014; tu texto, formato y dise&#xF1;o se mantienen.</p>
+            </article>
+        <article class="home-feature-card">
+            <div class="home-feature-icon"><i class="bi bi-grid-1x2"></i></div>
+            <h3>Texto plano, texto enriquecido, Markdown, tareas y m&#xE1;s</h3>
+            <p>M&#xE1;s que un simple bloc de notas, aNotepad te permite escribir notas con formato, redactar en Markdown, crear listas de tareas, hacer hojas de c&#xE1;lculo y dibujar en una pizarra &#x2014; todo en un solo lugar:</p>
+            <ul class="home-feature-links">
+                    <li><a href="/richtext">Editor de texto enriquecido</a></li>
+                    <li><a href="/markdown">Editor Markdown</a></li>
+                    <li><a href="/tasklist">Listas de tareas</a></li>
+                    <li><a href="/spreadsheet">Hoja de c&#xE1;lculo online</a></li>
+                    <li><a href="/whiteboard">Pizarra online</a></li>
+            </ul>
+        </article>
+    </div>
+
+    <h2 class="home-faq-heading">Preguntas frecuentes</h2>
+    <div class="home-faq">
+            <details class="home-faq-item">
+                <summary><span>&#xBF;aNotepad es gratis?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>S&#xED;. aNotepad es un bloc de notas online gratuito. Puedes tomar, guardar y compartir notas sin pagar. Hay una mejora Premium opcional con funciones extra, pero el bloc de notas principal es gratis.</p></div>
+            </details>
+            <details class="home-faq-item">
+                <summary><span>&#xBF;Necesito una cuenta para tomar notas?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>No. Puedes empezar a escribir de inmediato sin registrarte. Crear una cuenta gratuita te permite organizar notas en carpetas y abrirlas desde cualquier dispositivo.</p></div>
+            </details>
+            <details class="home-faq-item">
+                <summary><span>&#xBF;Mis notas se guardan autom&#xE1;ticamente?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>S&#xED;. aNotepad guarda autom&#xE1;ticamente tu nota mientras escribes, as&#xED; tu trabajo se conserva incluso si cierras la pesta&#xF1;a o pierdes la conexi&#xF3;n.</p></div>
+            </details>
+            <details class="home-faq-item">
+                <summary><span>&#xBF;Puedo compartir una nota con alguien?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>S&#xED;. Cada nota tiene su propio enlace que puedes enviar a quien quieras. Puedes hacer una nota p&#xFA;blica o protegerla con contrase&#xF1;a, y activar Edici&#xF3;n r&#xE1;pida si quieres que otros tambi&#xE9;n puedan editarla.</p></div>
+            </details>
+            <details class="home-faq-item">
+                <summary><span>&#xBF;Mis notas son privadas?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>T&#xFA; controlas la visibilidad de cada nota. Las notas que creas sin una cuenta son p&#xFA;blicas, as&#xED; que cualquiera con el enlace puede abrirlas, y puedes cambiar cualquier nota a privada o protegida con contrase&#xF1;a en cualquier momento. Con una cuenta gratuita, las nuevas notas son privadas por defecto.</p></div>
+            </details>
+            <details class="home-faq-item">
+                <summary><span>&#xBF;Puedo descargar mis notas?</span><i class="bi bi-chevron-down home-faq-chevron"></i></summary>
+                <div class="home-faq-a"><p>S&#xED;. Puedes exportar cualquier nota como PDF o documento de Microsoft Word.</p></div>
+            </details>
+    </div>
+</section>
+
+<script type="application/ld&#x2B;json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"\u00BFaNotepad es gratis?","acceptedAnswer":{"@type":"Answer","text":"S\u00ED. aNotepad es un bloc de notas online gratuito. Puedes tomar, guardar y compartir notas sin pagar. Hay una mejora Premium opcional con funciones extra, pero el bloc de notas principal es gratis."}},{"@type":"Question","name":"\u00BFNecesito una cuenta para tomar notas?","acceptedAnswer":{"@type":"Answer","text":"No. Puedes empezar a escribir de inmediato sin registrarte. Crear una cuenta gratuita te permite organizar notas en carpetas y abrirlas desde cualquier dispositivo."}},{"@type":"Question","name":"\u00BFMis notas se guardan autom\u00E1ticamente?","acceptedAnswer":{"@type":"Answer","text":"S\u00ED. aNotepad guarda autom\u00E1ticamente tu nota mientras escribes, as\u00ED tu trabajo se conserva incluso si cierras la pesta\u00F1a o pierdes la conexi\u00F3n."}},{"@type":"Question","name":"\u00BFPuedo compartir una nota con alguien?","acceptedAnswer":{"@type":"Answer","text":"S\u00ED. Cada nota tiene su propio enlace que puedes enviar a quien quieras. Puedes hacer una nota p\u00FAblica o protegerla con contrase\u00F1a, y activar Edici\u00F3n r\u00E1pida si quieres que otros tambi\u00E9n puedan editarla."}},{"@type":"Question","name":"\u00BFMis notas son privadas?","acceptedAnswer":{"@type":"Answer","text":"T\u00FA controlas la visibilidad de cada nota. Las notas que creas sin una cuenta son p\u00FAblicas, as\u00ED que cualquiera con el enlace puede abrirlas, y puedes cambiar cualquier nota a privada o protegida con contrase\u00F1a en cualquier momento. Con una cuenta gratuita, las nuevas notas son privadas por defecto."}},{"@type":"Question","name":"\u00BFPuedo descargar mis notas?","acceptedAnswer":{"@type":"Answer","text":"S\u00ED. Puedes exportar cualquier nota como PDF o documento de Microsoft Word."}}]}</script>
+
+
+</div>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-primary">
+            <div class="footer-brand">
+                <a class="footer-brand-link" href="/" aria-label="aNotepad home">
+                    <img src="https://cdn.anotepad.com/images/anotepad.svg?v=2611161837" alt="" class="footer-brand-logo" />
+                    <span>aNotepad</span>
+                </a>
+                <p class="footer-description">aNotepad es un bloc de notas online rápido y sencillo. Toma y comparte notas sin cuenta, escribe con editor de texto enriquecido y descarga como PDF o Word.</p>
+                <div class="footer-badges" aria-label="Descargas de la app m&#xF3;vil">
+                    <a target="_blank" rel="nofollow noopener" href="https://apps.apple.com/app/a-notepad-take-share-notes/id1494609935"><img alt="Download on the App Store" src="https://cdn.anotepad.com/images/badge_applestore.png?v=2611161837" height="40" /></a>
+                    <a target="_blank" rel="nofollow noopener" href="https://play.google.com/store/apps/details?id=com.anotepad.android"><img alt="Get it on Google Play" src="https://cdn.anotepad.com/images/badge_playstore.png?v=2611161837" height="40" /></a>
+                </div>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navegaci&#xF3;n del pie de p&#xE1;gina">
+                <div class="footer-nav-group" aria-labelledby="footer-heading-product">
+                    <h3 id="footer-heading-product">aNotepad</h3>
+                    <ul>
+                        <li><a href="/about">Acerca de</a></li>
+                        <li><a href="/features">Funciones</a></li>
+                        <li><a href="/templates">Plantillas</a></li>
+                        <li><a href="https://anotepad.cc?lang=es">Espacio de trabajo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-group" aria-labelledby="footer-heading-sell">
+                    <h3 id="footer-heading-sell">Compartir y vender</h3>
+                    <ul>
+                        <li><a href="/creators">Gu&#xED;a para creadores</a></li>
+                        <li><a href="/buyers">Gu&#xED;a para compradores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-stack">
+                    <div class="footer-nav-group" aria-labelledby="footer-heading-developers">
+                        <h3 id="footer-heading-developers">Desarrolladores</h3>
+                        <ul>
+                            <li><a href="/api-access">REST API</a></li>
+                            <li><a href="/mcp-access">Integraci&#xF3;n de IA (MCP)</a></li>
+                        </ul>
+                    </div>
+                        <div class="footer-nav-group" aria-labelledby="footer-heading-tools">
+                            <h3 id="footer-heading-tools">Herramientas</h3>
+                            <ul>
+                                <li><a href="https://www.gotresumebuilder.com" target="_blank" rel="nofollow noopener">Creador de curr&#xED;culums</a></li>
+                                <li><a href="https://www.gotfreefax.com" target="_blank" rel="nofollow noopener">Fax gratis</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="footer-nav-group" aria-labelledby="footer-heading-legal">
+                    <h3 id="footer-heading-legal">Legal</h3>
+                    <ul>
+                        <li><a href="/privacy">Privacidad</a></li>
+                        <li><a href="/terms">T&#xE9;rminos de servicio</a></li>
+                        <li><a href="/reportabuse">Reportar abuso</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <p class="footer-copy">&copy; 2009-2026 aNotepad.com</p>
+    </div>
+</footer>
+
+<div class="modal" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="languageModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="languageModalLabel">Selecciona tu idioma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="languageContent">
+                <ul>
+                    <li><a href="https://anotepad.com">English</a></li>
+                    <li><a href="https://anotepad.com/language/pt">Português</a></li>
+                    <li><a href="https://anotepad.com/language/cs">Čeština</a></li>
+                    <li><a href="https://anotepad.com/language/da">Dansk</a></li>
+                    <li><a href="https://anotepad.com/language/de">Deutsch</a></li>
+                    <li><a href="https://anotepad.com/language/es">Español</a></li>
+                    <li><a href="https://anotepad.com/language/fr">Français</a></li>
+                    <li><a href="https://anotepad.com/language/it">Italiano</a></li>
+                    <li><a href="https://anotepad.com/language/id">Bahasa Indonesia</a></li>
+                    <li><a href="https://anotepad.com/language/ms">Bahasa Melayu</a></li>
+                    <li><a href="https://anotepad.com/language/nl">Nederlands</a></li>
+                    <li><a href="https://anotepad.com/language/no">Norsk</a></li>
+                    <li><a href="https://anotepad.com/language/pl">Polski</a></li>
+                    <li><a href="https://anotepad.com/language/fi">Suomi</a></li>
+                    <li><a href="https://anotepad.com/language/sv">Svenska</a></li>
+                    <li><a href="https://anotepad.com/language/vi">Tiếng Việt</a></li>
+                    <li><a href="https://anotepad.com/language/tr">Türkçe</a></li>
+                    <li><a href="https://anotepad.com/language/el">Ελληνικά</a></li>
+                    <li><a href="https://anotepad.com/language/ru">Русский</a></li>
+                    <li><a href="https://anotepad.com/language/ua">Українська</a></li>
+                    <li><a href="https://anotepad.com/language/he">עברית</a></li>
+                    <li><a href="https://anotepad.com/language/ar">العربية</a></li>
+                    <li><a href="https://anotepad.com/language/hi">हिन्दी</a></li>
+                    <li><a href="https://anotepad.com/language/th">ภาษาไทย</a></li>
+                    <li><a href="https://anotepad.com/language/ko">한국어</a></li>
+                    <li><a href="https://anotepad.com/language/cn">中文(简体)</a></li>
+                    <li><a href="https://anotepad.com/language/tw">中文(繁體)</a></li>
+                    <li><a href="https://anotepad.com/language/jp">日本語</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal" id="adBlockerModal" tabindex="-1" role="dialog" aria-labelledby="adBlockerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adBlockerModalLabel">Se detect&#xF3; un bloqueador de anuncios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que estás usando un bloqueador de anuncios. Los anuncios permiten que aNotepad sea gratis para todos.</p><p>Por favor, considera agregar <strong>anotepad.com</strong> a la lista blanca de tu bloqueador.</p><p>O mejora a Premium para obtener:</p><ul><li><b>Sin anuncios</b></li><li>Redacción con IA y Chat IA</li><li>Subida de archivos y notas de audio</li></ul><p>Desde $1.99/mes — cancela cuando quieras.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quiz&#xE1;s despu&#xE9;s</button>
+                    <button type="button" class="btn btn-primary" onclick="fnAdBlockerUpgrade()">Mejorar a Premium</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal" id="dialogModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body py-4">
+                <p id="dialogModalMessage" class="mb-0"></p>
+                <input type="text" class="form-control mt-3" id="dialogModalInput" style="display:none;" />
+            </div>
+            <div class="modal-footer py-2">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="dialogModalCancel"></button>
+                <button type="button" class="btn btn-primary" id="dialogModalConfirm"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>var Notepad = Notepad || {}; Notepad.Language = {"SiteJs.AdBlocker.Body":"\u003Cp\u003EParece que est\u00E1s usando un bloqueador de anuncios. Los anuncios permiten que aNotepad sea gratis para todos.\u003C/p\u003E\u003Cp\u003EPor favor, considera agregar \u003Cstrong\u003Eanotepad.com\u003C/strong\u003E a la lista blanca de tu bloqueador.\u003C/p\u003E\u003Cp\u003EO mejora a Premium para obtener:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cb\u003ESin anuncios\u003C/b\u003E\u003C/li\u003E\u003Cli\u003ERedacci\u00F3n con IA y Chat IA\u003C/li\u003E\u003Cli\u003ESubida de archivos y notas de audio\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EDesde $1.99/mes \u2014 cancela cuando quieras.\u003C/p\u003E","SiteJs.AdBlocker.Dismiss":"Quiz\u00E1s despu\u00E9s","SiteJs.AdBlocker.Title":"Se detect\u00F3 un bloqueador de anuncios","SiteJs.AdBlocker.Upgrade":"Mejorar a Premium","SiteJs.AddTask":"Agregar nueva tarea aqu\u00ED","SiteJs.AiChat.Clear":"Borrar chat","SiteJs.AiChat.DailyRateLimit":"Has alcanzado el l\u00EDmite diario de chat con IA. Se restablece en 24 horas.","SiteJs.AiChat.DailyUpgradePrompt":"Has alcanzado el l\u00EDmite diario de chat con IA. \u003Ca href=\u0027/settings/membership\u0027\u003EMejora a un nivel superior\u003C/a\u003E para m\u00E1s uso diario.","SiteJs.AiChat.EmptyState":"Hazle una pregunta al asistente de IA para comenzar.","SiteJs.AiChat.Error":"Algo sali\u00F3 mal. Por favor, int\u00E9ntalo de nuevo.","SiteJs.AiChat.GuestPrompt":"Por favor, \u003Ca href=\u0027/create_account\u0027\u003Einicia sesi\u00F3n o crea una cuenta gratis\u003C/a\u003E para usar el chat de IA.","SiteJs.AiChat.IncludeNote":"Chatear sobre esta nota","SiteJs.AiChat.NoteTooLong":"La nota es demasiado larga para el chat","SiteJs.AiChat.Placeholder":"Preg\u00FAntame lo que quieras...","SiteJs.AiChat.RateLimit":"Has alcanzado el l\u00EDmite de chat. Por favor, int\u00E9ntalo m\u00E1s tarde.","SiteJs.AiChat.Send":"Enviar","SiteJs.AiChat.Thinking":"Pensando...","SiteJs.AiChat.Title":"Chat de IA","SiteJs.AiChat.UpgradePrompt":"Has alcanzado el l\u00EDmite de chats.\u003Cbr\u003E\u003Cbr\u003EMejora a Plus:\u003Cbr\u003E\u2022 L\u00EDmites diarios de chat con IA m\u00E1s altos\u003Cbr\u003E\u2022 Sin anuncios\u003Cbr\u003E\u2022 Subida de archivos y notas de audio\u003Cbr\u003E\u003Cbr\u003EDesde $1.99/mes \u2014 cancela cuando quieras.\u003Cbr\u003E\u003Cbr\u003E\u003Ca href=\u0027/settings/membership\u0027 class=\u0027btn btn-primary btn-sm\u0027\u003EMejorar a Plus\u003C/a\u003E","SiteJs.AiWrite.Apply":"Aplicar","SiteJs.AiWrite.Copied":"\u00A1Copiado!","SiteJs.AiWrite.Copy":"Copiar","SiteJs.AiWrite.DailyRateLimit":"Has alcanzado el l\u00EDmite diario de IA. Se restablece en 24 horas.","SiteJs.AiWrite.DailyUpgradePrompt":"Has alcanzado el l\u00EDmite diario de IA. Mejora a un nivel superior para m\u00E1s uso diario.","SiteJs.AiWrite.Dismiss":"Cerrar","SiteJs.AiWrite.Error":"Algo sali\u00F3 mal. Por favor, int\u00E9ntalo de nuevo.","SiteJs.AiWrite.Grammar":"Gram\u00E1tica","SiteJs.AiWrite.GuestPrompt":"Por favor, \u003Ca href=\u0027/create_account\u0027\u003Einicia sesi\u00F3n o crea una cuenta gratis\u003C/a\u003E para usar la Escritura con IA.","SiteJs.AiWrite.LangArabic":"\u00C1rabe","SiteJs.AiWrite.LangChinese":"Chino","SiteJs.AiWrite.LangEnglish":"Ingl\u00E9s","SiteJs.AiWrite.LangFrench":"Franc\u00E9s","SiteJs.AiWrite.LangGerman":"Alem\u00E1n","SiteJs.AiWrite.LangHindi":"Hindi","SiteJs.AiWrite.LangJapanese":"Japon\u00E9s","SiteJs.AiWrite.LangKorean":"Coreano","SiteJs.AiWrite.LangPortuguese":"Portugu\u00E9s","SiteJs.AiWrite.LangRussian":"Ruso","SiteJs.AiWrite.LangSpanish":"Espa\u00F1ol","SiteJs.AiWrite.LangVietnamese":"Vietnamita","SiteJs.AiWrite.RateLimit":"Has alcanzado el l\u00EDmite diario. Por favor, int\u00E9ntalo ma\u00F1ana.","SiteJs.AiWrite.Rewrite":"Reescribir","SiteJs.AiWrite.Summarize":"Resumir","SiteJs.AiWrite.SummarizePreview":"Esto es una vista previa.","SiteJs.AiWrite.Tone":"Tono","SiteJs.AiWrite.ToneCasual":"Informal","SiteJs.AiWrite.ToneFormal":"Formal","SiteJs.AiWrite.ToneFriendly":"Amistoso","SiteJs.AiWrite.ToneProfessional":"Profesional","SiteJs.AiWrite.Translate":"Traducir","SiteJs.AiWrite.Upgrade":"Mejora para acceso completo","SiteJs.AiWrite.UpgradeNow":"Actualizar ahora","SiteJs.AiWrite.UpgradePrompt":"Has alcanzado tu l\u00EDmite gratuito de IA.\u003Cbr\u003E\u003Cbr\u003EMejora a Plus:\u003Cbr\u003E\u2022 L\u00EDmites diarios de IA m\u00E1s altos\u003Cbr\u003E\u2022 Sin anuncios\u003Cbr\u003E\u2022 Subida de archivos y notas de audio\u003Cbr\u003E\u003Cbr\u003EDesde $1.99/mes \u2014 cancela cuando quieras.","SiteJs.Bookmark.Comment":"Comentario (opcional)","SiteJs.Bookmark.DeleteConfirm":"\u00BFEst\u00E1s seguro de que deseas eliminar este marcador?","SiteJs.Bookmark.TagFilter":"Filtrar por etiquetas","SiteJs.Bookmark.TagsPlaceholder":"Etiquetas (separadas por comas, opcional)","SiteJs.Bookmark.Title":"T\u00EDtulo (opcional)","SiteJs.Bookmark.Url":"URL","SiteJs.Bookmark.UrlRequired":"Se requiere URL","SiteJs.CommentRequired":"Tu nombre y comentario son obligatorios","SiteJs.DeleteFileConfirm":"\u00BFDeseas eliminar este archivo?","SiteJs.DeleteFolderConfirm1":"\u00BFQuieres eliminar la colecci\u00F3n?","SiteJs.DeleteFolderConfirm2":"Las notas en esa colecci\u00F3n NO se eliminar\u00E1n.","SiteJs.DeleteNoteConfirm":"\u00BFDeseas eliminar esta nota?","SiteJs.DialogCancel":"Cancelar","SiteJs.DialogConfirm":"Confirmar","SiteJs.DialogOk":"Aceptar","SiteJs.EmptyRecycleBinConfirm":"\u00BFEst\u00E1s seguro de que deseas vaciar la papelera de reciclaje?","SiteJs.LinkCopied":"\u00A1Copiado!","SiteJs.NoteContentOverLimit":"\u00A1Nota no guardada! El contenido de la nota supera el l\u00EDmite de 1MB. Por favor, \u003Ca href=\u0022/settings/membership\u0022 target=\u0022_blank\u0022\u003Eactualiza tu plan\u003C/a\u003E para guardar notas m\u00E1s grandes.","SiteJs.NoteContentOverLimitPaid":"\u00A1Nota no guardada! El contenido de la nota es demasiado largo (supera el l\u00EDmite de 10 MB).","SiteJs.NoteDeleted":"Nota eliminada","SiteJs.NoteMoved":"Nota movida","SiteJs.NoteNotSaved":"Nota No Guardada","SiteJs.NoteRestored":"Nota restaurada","SiteJs.NoteSaved":"Nota guardada","SiteJs.PaidContent.AcceptTerms":"Por favor, lee y acepta los t\u00E9rminos antes de continuar.","SiteJs.PaidContent.CreateOrderFailed":"No se pudo crear el pedido. Int\u00E9ntalo de nuevo.","SiteJs.PaidContent.InvalidPrice":"El precio debe estar entre $0.01 y $99.99.","SiteJs.PaidContent.InvalidTxHash":"Por favor, introduce un hash de transacci\u00F3n v\u00E1lido.","SiteJs.PaidContent.InvalidWallet":"Direcci\u00F3n de billetera inv\u00E1lida. Debe comenzar con 0x seguido de 40 caracteres hexadecimales.","SiteJs.PaidContent.OrderExpired":"Este pedido ha expirado. Por favor, comienza de nuevo.","SiteJs.PaidContent.PaymentVerified":"\u00A1Pago verificado! Recargando...","SiteJs.PaidContent.Processing":"Procesando...","SiteJs.PaidContent.SaveNoteFirst":"Por favor, guarda la nota antes de configurarla como contenido de pago.","SiteJs.PaidContent.VerifyFailed":"No se pudo verificar el pago. Int\u00E9ntalo de nuevo.","SiteJs.PlainTextNote":"Nota en texto plano","SiteJs.RenameFolderPrompt":"Renombrar colecci\u00F3n","SiteJs.ReplyingTo":"Respondiendo a","SiteJs.RichTextNote":"Nota en texto enriquecido","SiteJs.SaveFailed":"Error al guardar","SiteJs.Saved":"Guardado","SiteJs.Saving":"Guardando...","SiteJs.TaskList":"Lista de tareas","SiteJs.UnsavedChanges":"Es posible que haya cambios sin guardar. \u00BFDesea abandonar esta p\u00E1gina?"};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.anotepad.com/js/site.min.js?v=2611161837" type="text/javascript"></script>
+
+    
+
+<script type="text/javascript">
+    var Notepad = Notepad || {};
+    Notepad.AutoSaveEnabled = true;
+    Notepad.NoteEditMode = "new";
+    Notepad.NoteTitleChanged = false;
+    Notepad.NoteContentChanged = false;
+    Notepad.NoteContentMaxLength = 1048576;
+</script>
+
+
+<script type="text/javascript">
+</script>
+<link href="https://cdn.anotepad.com/css/fileuploader.min.css?v=2611161837" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.anotepad.com/js/fileuploader.min.js?v=2611161837" type="text/javascript"></script>
+
+
+<div id="g_id_onload"
+     data-client_id="297124348232-madt04dmdqi2ko2tb2rrt8sf2up7dupk.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="fnGoogleOneTapCallback"
+     data-auto_prompt="true"
+     data-itp_support="true">
+</div>
+
+<form id="googleOneTapForm" method="post" action="/create_account" style="display:none;">
+    <input type="hidden" name="action" value="social" />
+    <input type="hidden" name="provider" value="Google" />
+    <input type="hidden" id="googleOneTapToken" name="token" />
+    <input type="hidden" id="googleOneTapReturnUrl" name="returnurl" />
+</form>
+
+<script src="https://accounts.google.com/gsi/client" async></script>
+<script>
+    function fnGoogleOneTapCallback(response) {
+        if (response && response.credential) {
+            document.getElementById('googleOneTapToken').value = response.credential;
+            document.getElementById('googleOneTapReturnUrl').value = window.location.pathname + window.location.search;
+            document.getElementById('googleOneTapForm').submit();
+        }
+    }
+</script>
+</body>
+</html>
